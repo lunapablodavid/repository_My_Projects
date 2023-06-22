@@ -1,0 +1,41 @@
+
+
+#div-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: center;background-color: yellow;
+}
+card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hola{
+    display: flex; 
+    background-color: #FFDB58;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    margin: 10px;
+    width: 250px;
+    height: 350px;
+}
+
+
+img{
+    width: 150px;
+    height: 200px;
+}
+
+
+h1,h2{
+    width: 90%;
+    box-shadow: 5px 11px 30px #70684a;
+    border-radius: 10px;
+   background-color: yellow;
+   font-size: 25px;
+
+}
