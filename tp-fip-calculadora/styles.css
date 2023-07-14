@@ -1,0 +1,101 @@
+
+#calculadora-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb( 215, 219, 221  );
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+}
+
+
+#calculadora{
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+width: 350px;
+height: 500px;
+background-color: rgb(52, 73, 94 );
+border-radius: 20px;
+padding: 11px; 
+box-shadow:20px 20px 20px rgb(31, 39, 48);
+}
+
+#intput-container{
+    display: flex;
+    background-color:black; 
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    margin-top: 50px;  
+}
+#intput-entrada{
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 90%;
+    height: 75%;
+    margin-left: 10px;
+    font-size: 35px;
+    border-color: transparent;
+    color:white
+  
+}
+#input-entrada2{
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 90%;
+    height: 25%;
+    margin-left: 10px;
+    font-size: 35px;
+   border-color: transparent;
+   color: white;
+   margin-top: 15px;
+}
+.btns{
+    padding-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 60%;
+    align-items: flex-start;
+margin-bottom: 10px;
+ 
+}
+.operaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    padding-top: 16px;
+ 
+}
+button{
+width: 100px;
+height:40px;
+margin:10px;
+border-color: black;
+border-radius: 10px;
+margin-bottom: 20px;
+
+}
+
+#btn_igual{
+background-color: black;
+color: beige;
+}
+
+.operaciones>button{
+    margin-bottom: 20px;
+}
+.operaciones>#btn_igual{
+margin-bottom:50px ;
+}
