@@ -2,6 +2,12 @@ import { useEffect, useState } from 'react';
 import ProductList from './assets/components/ProductList';
 import React from 'react';
 import Cart from './assets/components/Cart';
+
+
+
+
+
+
 function App() {
 const [baseUrl, setBaseUrl]=useState('https://fakestoreapi.com/products')
 const [products, setProducts]= useState([])
@@ -15,7 +21,11 @@ setCart((prev)=>[...prev, product])
 console.log(cart.length, product.id)
 }
 
- 
+const deleteCart=()=>{
+
+}
+
+  
 
   
 
@@ -23,6 +33,8 @@ const getTotal = (cart) =>{
  const totalPrice=cart.reduce((acum, curr)=>acum + Number(curr.price), 0)
   return totalPrice.toFixed(2);
 }
+
+
 const getDerivedCart = () =>{
 const derivedCart=[];
 cart.forEach((item)=>{
@@ -65,14 +77,17 @@ if(error) return (
 return (
 
     <>
+    <div className='mainContainer'>
     <header className='headerContainer'>
 
-      <h3>{`Productos agregados al carrito: ${cart.length}  Precio total: $:${getTotal(cart)}`}</h3>
-      <Cart cart={getDerivedCart()}/>
-    </header>
+<h3>{`Productos agregados al carrito: ${cart.length}  Precio total: $:${getTotal(cart)}`}</h3>
+<Cart cart={getDerivedCart()}/>
+</header>
 <div>
-<ProductList products={products} addCart={addCart} />
+<ProductList products={products} addCart={addCart} deleteCart={deleteCart} />
 </div>
+    </div>
+ 
     </>
   )
 

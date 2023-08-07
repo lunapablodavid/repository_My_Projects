@@ -1,16 +1,16 @@
 import React from "react";
 import Product from "./Product";
-const ProductList=({products, addCart})=>{
+const ProductList=({products, addCart, deleteCart})=>{
 
 return(
     
   <>
-  <div className="divContainer"> 
+  <div className="colores"> 
         <h2>Lista de productos</h2>
 </div>
 <div>
       <section>
-      {products.map((prod)=> <Product key={prod.id} product={prod}  addCart={addCart} />)} 
+      {products.map((prod)=> <Product key={prod.id} product={prod}  addCart={addCart} deleteCart={deleteCart}/>)} 
       </section>
   </div>
 

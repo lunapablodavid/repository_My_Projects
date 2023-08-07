@@ -1,23 +1,27 @@
 import './Product.css'
 import './ProductList'
-import { useState } from 'react';
 
-const Product = ({product,addCart})=> {
+const Product = ({product,addCart,deleteCart })=> {
  
   return (
   <> 
     <header>
  
     </header>
-        <div className='productContainer'>
+    <div className='divContainer'>
+
+    <div className='productContainer'>
             <h3>{product.title}</h3>
             <img src={product.image} alt={product.title} />
             <h3>{product.price}</h3>
-            <p>{product.description}</p>
+            <p className>{product.description}</p>
        <div>
            <button onClick={()=>addCart(product)}>Agregar alcarrito</button>
+           <button onClick={()=>deleteCart(product)}>Eliminar del carrito</button>
        </div>
-     </div>   
+     </div> 
+    </div>
+       
   </>
  )
 }
