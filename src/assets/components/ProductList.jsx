@@ -5,7 +5,7 @@ const ProductList=({products, addCart, deleteCart})=>{
 return(
     
   <>
-  <div className="colores"> 
+  <div className="tituloContainer"> 
         <h2>Lista de productos</h2>
 </div>
 <div>

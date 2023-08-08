@@ -1,6 +1,6 @@
 import './Product.css'
 import './ProductList'
-
+import './Media.css'
 const Product = ({product,addCart,deleteCart })=> {
  
   return (
